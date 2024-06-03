@@ -34,7 +34,7 @@
         android:id="@+id/textView2"
         android:layout_width="245dp"
         android:layout_height="33dp"
-        android:text="@string/user_name"
+        android:text="@string/Username"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextText"
@@ -42,6 +42,33 @@
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.278" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="357dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="@string/enter_user_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="33dp"
+        android:text="@string/Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
