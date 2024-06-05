@@ -12,9 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KiddoSafeCard"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
+
+        <activity android:name=".MainActivity"> </activity>
+        <activity android:name=".LoginActivity"> </activity>
+        <activity android:name=".RegisterActivity"> </activity>
+        <activity android:name=".AddChildNotify"> </activity>
+        <activity android:name=".BottomNavBarActivity"
+
+
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
