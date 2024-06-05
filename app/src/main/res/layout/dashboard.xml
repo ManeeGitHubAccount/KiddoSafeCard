@@ -22,120 +22,111 @@
         android:id="@+id/btn_img_immunization"
         android:layout_width="153dp"
         android:layout_height="148dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/btn_img_growth_chart"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:srcCompat="@drawable/immunization"
-        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txt_immunization"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
         android:text="Immunization"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_img_upcoming_dates"
-        app:layout_constraintEnd_toStartOf="@+id/txt_growth_chart"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_img_immunization"
-        app:layout_constraintVertical_bias="0.373"
+        app:layout_constraintEnd_toEndOf="@id/btn_img_immunization"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@id/btn_img_immunization"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_immunization"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/btn_img_growth_chart"
         android:layout_width="153dp"
         android:layout_height="148dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintStart_toEndOf="@id/btn_img_immunization"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:srcCompat="@drawable/growth_chart"
-        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txt_growth_chart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="44dp"
         android:text="Growth Chart"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btn_img_parental_edu_res"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_img_growth_chart"
-        app:layout_constraintVertical_bias="0.373"
+        app:layout_constraintEnd_toEndOf="@id/btn_img_growth_chart"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="@id/btn_img_growth_chart"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_growth_chart"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/btn_img_upcoming_dates"
         android:layout_width="153dp"
         android:layout_height="148dp"
+        android:layout_marginTop="52dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/btn_img_parental_edu_res"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_immunization"
         app:srcCompat="@drawable/upcoming_dates"
-        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="508dp" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txt_upcoming_dates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
         android:text="Upcoming Dates"
-        android:textSize="20sp"
         android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_img_upcoming_dates"
-        app:layout_constraintVertical_bias="0.159"
+        app:layout_constraintEnd_toEndOf="@id/btn_img_upcoming_dates"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/btn_img_upcoming_dates"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_upcoming_dates"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/btn_img_parental_edu_res"
         android:layout_width="153dp"
         android:layout_height="148dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_img_upcoming_dates"
+        app:layout_constraintTop_toBottomOf="@+id/txt_growth_chart"
         app:srcCompat="@drawable/parental_edu_res"
-        tools:ignore="ContentDescription,MissingConstraints,SpeakableTextPresentCheck,ImageContrastCheck"
-        tools:layout_editor_absoluteY="508dp" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txt_parental_edu_res"
-        android:layout_width="175dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="201dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
         android:text="Parental Education Resources"
-        android:textSize="20sp"
         android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_img_parental_edu_res"
-        app:layout_constraintVertical_bias="0.192"
-        tools:ignore="HardcodedText,TextSizeCheck" />
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/btn_img_parental_edu_res"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/btn_img_parental_edu_res"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_parental_edu_res"
+        tools:ignore="HardcodedText" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -151,6 +142,5 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu"
         tools:ignore="VisualLintBottomNav" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
