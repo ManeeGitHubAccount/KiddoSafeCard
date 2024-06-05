@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="286dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baby_nav"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt_child_name"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+            android:text="Child’s Full Name "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_child_name"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Child’s Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_child_name"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_child_name"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="335dp"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_gender">
+
+            <RadioButton
+                android:id="@+id/radio_btn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Female"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radio_btn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_dob"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:text="Date of Birth"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_gender"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_dob"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Pick the Date of Birth"
+            android:inputType="date"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dob"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <TextView
+            android:id="@+id/txt_DOR"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+            android:text="Date of Registration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_dob"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_dor"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Pick the Date of Registration"
+            android:inputType="date"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_DOR"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <TextView
+            android:id="@+id/txt_mother_name"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+            android:text="Mother Name "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_dor"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_mother_name"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Mother’s Name"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mother_name"
+            tools:ignore="Autofill,HardcodedText,UnknownId" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="24dp"
+            android:text="Address "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_mother_name"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter the Address"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_address"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_reg_health_div"
+            android:layout_width="245dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Regional Health Division "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_address"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_reg_health_div"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_reg_health_div"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_no_of_children"
+            android:layout_width="288dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="20dp"
+            android:text="No of Children including this child"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_reg_health_div"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_no_of_children"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_no_of_children" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_btn_1"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_no_of_children"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_btn_1"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_no_of_children"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

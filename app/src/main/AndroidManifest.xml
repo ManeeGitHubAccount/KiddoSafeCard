@@ -17,8 +17,8 @@
         <activity android:name=".LoginActivity"> </activity>
         <activity android:name=".RegisterActivity"> </activity>
         <activity android:name=".AddChildNotify"> </activity>
-        <activity android:name=".BottomNavBarActivity"
-
+        <activity android:name=".BottomNavBarActivity" > </activity>
+        <activity android:name=".AddChildActivity"
 
             android:exported="true">
 
