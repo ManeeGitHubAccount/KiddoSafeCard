@@ -1,0 +1,6 @@
+<resources>
+    <style name="BottomNavigationViewStyle"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconSize">28dp</item>
+    </style>
+</resources>
