@@ -115,8 +115,8 @@
 
     <TextView
         android:id="@+id/txt_parental_edu_res"
-        android:layout_width="201dp"
-        android:layout_height="74dp"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
         android:layout_marginTop="24dp"
         android:text="Parental Education Resources"
         android:textColor="@color/black"
