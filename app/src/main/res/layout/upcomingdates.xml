@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="295dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Upcoming Dates"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <View
+        android:id="@+id/rectangle2"
+        android:layout_width="354dp"
+        android:layout_height="170dp"
+        android:background="#FB5E1B"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Vaccine name :"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Date :"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Time :"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Remarks :"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+
+    <View
+        android:id="@+id/rectangle3"
+        android:layout_width="354dp"
+        android:layout_height="170dp"
+        android:background="#D9D9D9"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Remarks :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Vaccine name :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Time :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Date :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
