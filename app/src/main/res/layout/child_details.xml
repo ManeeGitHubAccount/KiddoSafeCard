@@ -26,19 +26,20 @@
             tools:ignore="ContentDescription,UnknownId" />
 
         <!-- TextView 1 -->
+
         <TextView
             android:id="@+id/txt_select_child_name"
             android:layout_width="272dp"
             android:layout_height="31dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="56dp"
             android:text="Select your child's name ?"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintHorizontal_bias="0.179"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,TextSizeCheck" />
 
         <Spinner
             android:id="@+id/spinner_select_child_name"
@@ -269,8 +270,8 @@
         <Button
             android:id="@+id/btn_add"
             android:layout_width="192dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/background_btn_1"
             android:text="ADD"
             android:textColor="@color/white"
@@ -284,8 +285,8 @@
         <Button
             android:id="@+id/btn_delete"
             android:layout_width="203dp"
-            android:layout_height="47dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/background_btn_1"
             android:text="DELETE"
             android:textColor="@color/white"
