@@ -1,13 +1,10 @@
 <resources>
     <string name="app_name">KiddoSafeCard</string>
     <string name="text1">GET STARTED</string>
-    <string name="img1">app logo</string>
+    <string name="logo">app logo</string>
     <string name="enter_user_name">Enter User Name</string>
     <string name="user_name">User Name</string>
     <string name="Username">"user name "</string>
     <string name="Password">password</string>
-
-
-
 
 </resources>

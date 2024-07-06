@@ -7,11 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="416dp"
         android:layout_height="261dp"
-        android:contentDescription="@string/img1"
+        android:contentDescription="@string/logo"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="H,1:1.6"
@@ -20,7 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:ignore="VisualLintBounds" />
 
     <Button
         android:id="@+id/get_started"
@@ -39,4 +41,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.34" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

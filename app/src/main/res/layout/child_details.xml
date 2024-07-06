@@ -25,7 +25,6 @@
             app:srcCompat="@drawable/logo"
             tools:ignore="ContentDescription,UnknownId" />
 
-        <!-- TextView 1 -->
 
         <TextView
             android:id="@+id/txt_select_child_name"
@@ -59,21 +58,22 @@
             android:id="@+id/view"
             android:layout_width="402dp"
             android:layout_height="341dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:background="@color/gray"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner_select_child_name" />
 
         <TextView
-            android:id="@+id/txt_child_name"
+            android:id="@+id/txt_child_det_name"
             android:layout_width="126dp"
             android:layout_height="21dp"
             android:layout_marginTop="24dp"
             android:text="Child’s Full Name : "
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/txt_gender_value"
+            app:layout_constraintBottom_toTopOf="@+id/txt_gender_det"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,15 +85,15 @@
             android:id="@+id/txt_child_name_value"
             android:layout_width="200dp"
             android:layout_height="27dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_child_name"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toEndOf="@+id/txt_child_det_name"
             app:layout_constraintTop_toBottomOf="@+id/spinner_select_child_name"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_gender"
+            android:id="@+id/txt_gender_det"
             android:layout_width="126dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
@@ -103,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_child_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_child_det_name"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -113,12 +113,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_gender"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_gender_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_child_name_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_dob"
+            android:id="@+id/txt_dob_det"
             android:layout_width="126dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
@@ -128,7 +129,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_gender"
+            app:layout_constraintTop_toBottomOf="@+id/txt_gender_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -138,12 +139,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_dob"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_dob_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_gender_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_DOR"
+            android:id="@+id/txt_DOR_det"
             android:layout_width="144dp"
             android:layout_height="25dp"
             android:layout_marginTop="12dp"
@@ -153,7 +155,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.059"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_dob"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dob_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -163,12 +165,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_DOR"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_DOR_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_dob_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_mother_name"
+            android:id="@+id/txt_mother_name_det"
             android:layout_width="126dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
@@ -178,7 +181,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_DOR"
+            app:layout_constraintTop_toBottomOf="@+id/txt_DOR_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -188,12 +191,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_mother_name"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_mother_name_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_DOR_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_address"
+            android:id="@+id/txt_address_det"
             android:layout_width="126dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
@@ -203,7 +207,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.063"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_mother_name"
+            app:layout_constraintTop_toBottomOf="@+id/txt_mother_name_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -213,22 +217,23 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_address"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_address_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_mother_name_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_reg_health_div"
-            android:layout_width="171dp"
-            android:layout_height="26dp"
+            android:id="@+id/txt_reg_health_div_det"
+            android:layout_width="156dp"
+            android:layout_height="38dp"
             android:layout_marginTop="12dp"
             android:text="Regional Health Division : "
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintHorizontal_bias="0.063"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_address"
+            app:layout_constraintTop_toBottomOf="@+id/txt_address_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
@@ -238,32 +243,34 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_reg_health_div"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_reg_health_div_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_address_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
-            android:id="@+id/txt_no_of_children"
+            android:id="@+id/txt_no_of_children_det"
             android:layout_width="152dp"
             android:layout_height="39dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:text="No of Children including this child : "
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintHorizontal_bias="0.061"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_reg_health_div"
+            app:layout_constraintTop_toBottomOf="@+id/txt_reg_health_div_det"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
         <TextView
             android:id="@+id/txt_no_of_children_value"
             android:layout_width="200dp"
             android:layout_height="27dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="txt_no_of_children"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_no_of_children_det"
             app:layout_constraintTop_toBottomOf="@+id/txt_reg_health_div_value"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
@@ -271,7 +278,7 @@
             android:id="@+id/btn_add"
             android:layout_width="192dp"
             android:layout_height="48dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/background_btn_1"
             android:text="ADD"
             android:textColor="@color/white"
@@ -279,14 +286,14 @@
             app:layout_constraintEnd_toStartOf="@+id/btn_delete"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/txt_no_of_children_det"
             tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/btn_delete"
             android:layout_width="203dp"
             android:layout_height="48dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="52dp"
             android:background="@drawable/background_btn_1"
             android:text="DELETE"
             android:textColor="@color/white"
@@ -294,7 +301,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btn_add"
-            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/txt_no_of_children_value"
             tools:ignore="HardcodedText" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

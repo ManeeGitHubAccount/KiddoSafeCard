@@ -30,7 +30,7 @@
             android:id="@+id/txt_username"
             android:layout_width="245dp"
             android:layout_height="33dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:text="Username"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -186,7 +186,7 @@
             android:id="@+id/btn_register"
             android:layout_width="182dp"
             android:layout_height="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="22dp"
             android:layout_marginBottom="88dp"
             android:background="@drawable/background_btn_1"
             android:text="REGISTER"
@@ -203,8 +203,8 @@
         <Button
             android:id="@+id/btn_cancel"
             android:layout_width="182dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
             android:background="@drawable/background_btn_1"
             android:text="CANCEL"
             android:textColor="@color/white"
@@ -225,10 +225,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintHorizontal_bias="0.703"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_cancel"
-            app:layout_constraintVertical_bias="0.57"
+            app:layout_constraintVertical_bias="0.272"
             tools:ignore="HardcodedText" />
 
         <TextView
