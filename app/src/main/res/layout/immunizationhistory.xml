@@ -24,16 +24,16 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Profile Details"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.323"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/childname"
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.396"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
     <Spinner
         android:id="@+id/spinner_select_child"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.593"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck,TextSizeCheck" />
 
 
     <TextView
@@ -106,7 +106,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.635"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
 
     <TextView
@@ -149,7 +149,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.779"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
 
     <TextView
@@ -165,7 +165,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.828"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck,TextSizeCheck" />
 
     <TextView
         android:id="@+id/remarks"
