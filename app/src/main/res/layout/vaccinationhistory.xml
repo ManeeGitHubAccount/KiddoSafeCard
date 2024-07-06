@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="295dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Profile Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/childname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Select your child's name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_select_child"
+        android:layout_width="357dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_background"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/childname"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <View
+        android:id="@+id/rectangle3"
+        android:layout_width="354dp"
+        android:layout_height="110dp"
+        android:background="#D9D9D9"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Name of the vaccination :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/datevaccination"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Date of vaccination :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Remarks :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+    <View
+        android:id="@+id/rectangle3"
+        android:layout_width="354dp"
+        android:layout_height="110dp"
+        android:background="#D9D9D9"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <TextView
+        android:id="@+id/remarks2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Name of the vaccination :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/datevaccination"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Date of vaccination :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Remarks :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
