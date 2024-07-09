@@ -24,5 +24,9 @@
         <activity android:name=".Dashboard" android:exported="true" />
         <activity android:name=".RegisterActivity" android:exported="true" />
         <activity android:name=".ImmunizationActivity" android:exported="true" />
+        <activity android:name=".ImmunizationHistoryActivity" android:exported="true"
+            tools:ignore="Instantiatable" />
+
+
     </application>
 </manifest>

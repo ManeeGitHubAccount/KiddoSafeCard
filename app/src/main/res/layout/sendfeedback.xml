@@ -7,33 +7,33 @@
 
     <View
         android:id="@+id/rectangle3"
-        android:layout_width="440dp"
-        android:layout_height="120dp"
+        android:layout_width="416dp"
+        android:layout_height="187dp"
         android:background="#948A8A"
-        tools:layout_editor_absoluteX="-15dp"
-        tools:layout_editor_absoluteY="-6dp"
-        tools:ignore="MissingConstraints,VisualLintBounds" />
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-3dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_width="387dp"
+        android:layout_height="158dp"
         android:text="How likely are you to recommend our app to others?"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
+        android:textSize="45sp"
         android:textStyle="bold|italic"
         tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="15dp" />
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="3dp" />
 
     <View
         android:id="@+id/rectangle2"
-        android:layout_width="440dp"
-        android:layout_height="420dp"
+        android:layout_width="418dp"
+        android:layout_height="484dp"
         android:background="#FB5E1B"
         tools:ignore="MissingConstraints,VisualLintBounds"
-        tools:layout_editor_absoluteX="-24dp"
-        tools:layout_editor_absoluteY="106dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="181dp" />
 
     <ImageButton
         android:id="@+id/btn_img_verygood"
@@ -44,7 +44,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/very_good"
         tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="130dp" />
+        tools:layout_editor_absoluteY="212dp" />
+
+    <ImageButton
+        android:id="@+id/btn_img_good"
+        android:layout_width="153dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="216dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/good"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="212dp" />
+
 
     <TextView
         android:id="@+id/textView_verygood"
@@ -57,23 +69,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368"
+        app:layout_constraintVertical_bias="0.442"
         tools:ignore="DuplicateIds,HardcodedText,VisualLintOverlap" />
-
-    <ImageButton
-        android:id="@+id/btn_img_good"
-        android:layout_width="153dp"
-        android:layout_height="148dp"
-        android:layout_marginStart="208dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/good"
-        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="130dp" />
-
 
     <TextView
         android:id="@+id/textView_good"
@@ -86,10 +86,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367"
+        app:layout_constraintVertical_bias="0.44"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <ImageButton
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fair"
         tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="447dp" />
 
     <TextView
         android:id="@+id/textView_fair"
@@ -114,22 +114,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628"
+        app:layout_constraintVertical_bias="0.689"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <ImageButton
         android:id="@+id/btn_img_poor"
         android:layout_width="153dp"
         android:layout_height="148dp"
-        android:layout_marginStart="200dp"
+        android:layout_marginStart="220dp"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/poor"
         tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="447dp" />
 
     <TextView
         android:id="@+id/textView_poor"
@@ -142,10 +142,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616"
+        app:layout_constraintVertical_bias="0.688"
         tools:ignore="DuplicateIds,HardcodedText,VisualLintOverlap" />
 
     <EditText
@@ -160,22 +160,23 @@
         android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields"
-        tools:layout_editor_absoluteY="574dp" />
+        tools:layout_editor_absoluteY="688dp" />
 
     <Button
         android:id="@+id/btn_send_feedback"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
         android:background="@drawable/background_btn_1"
         android:text="Send Feedback"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="696dp" />
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="820dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
