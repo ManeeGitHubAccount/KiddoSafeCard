@@ -36,14 +36,17 @@
         app:layout_constraintVertical_bias="0.263"
         tools:ignore="DuplicateIds,HardcodedText" />
 
+
     <View
         android:id="@+id/rectangle2"
         android:layout_width="354dp"
         android:layout_height="170dp"
+        android:layout_marginBottom="448dp"
         android:background="#FB5E1B"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="290dp" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
