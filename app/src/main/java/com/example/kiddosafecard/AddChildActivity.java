@@ -1,72 +1,68 @@
 package com.example.kiddosafecard;
 
+import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.kiddosafecard.R;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AddChildActivity extends AppCompatActivity {
-
     private EditText editChildName, editDob, editDor, editMotherName, editAddress;
     private RadioGroup radioGroupGender;
-    private Spinner spinnerRegHealthDiv, spinnerNoOfChildren;
+    private Spinner spinnerRegHealthDiv;
+    final Calendar myCalender = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_child);
 
-        // Initialize UI elements
         editChildName = findViewById(R.id.edit_child_name);
-        editDob = findViewById(R.id.edit_dob);
-        editDor = findViewById(R.id.edit_dor);
         editMotherName = findViewById(R.id.edit_mother_name);
         editAddress = findViewById(R.id.edit_address);
         radioGroupGender = findViewById(R.id.radio_group_gender);
         spinnerRegHealthDiv = findViewById(R.id.spinner_reg_health_div);
-        spinnerNoOfChildren = findViewById(R.id.spinner_no_of_children);
-        Button btnRegister = findViewById(R.id.btn_register);
-        Button btnCancel = findViewById(R.id.btn_cancel);
+        Button btnregister = findViewById(R.id.btn_register);
+        Button btncancel = findViewById(R.id.btn_cancel);
 
-        // Set listeners for buttons
-        btnRegister.setOnClickListener(v -> registerChild());
+        editDob = findViewById(R.id.edit_dob);
+        editDob.setOnClickListener(v -> new DatePickerDialog(AddChildActivity.this, (view, year, month, dayOfMonth) -> {
 
-        btnCancel.setOnClickListener(v -> cancelRegistration());
-    }
+            myCalender.set(Calendar.YEAR, year);
+            myCalender.set(Calendar.MONTH, month);
+            myCalender.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
-    private void registerChild() {
-        String childName = editChildName.getText().toString();
-        String dob = editDob.getText().toString();
-        String dor = editDor.getText().toString();
-        String motherName = editMotherName.getText().toString();
-        String address = editAddress.getText().toString();
-        String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
-        String regHealthDiv = spinnerRegHealthDiv.getSelectedItem().toString();
-        String noOfChildren = spinnerNoOfChildren.getSelectedItem().toString();
+            String myFormat = "dd-MM-yyyy" ;
+            SimpleDateFormat dateFormat = new SimpleDateFormat(myFormat , Locale.US );
+            editDob.setText(dateFormat.format(myCalender.getTime()));
+        }, myCalender.get(Calendar.YEAR), myCalender.get(Calendar.MONTH), myCalender.get(Calendar.DAY_OF_MONTH)).show());
 
-        // Validate inputs (simplified)
-        if (childName.isEmpty() || dob.isEmpty() || dor.isEmpty() || motherName.isEmpty() || address.isEmpty()) {
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
-            return;
-        }
 
-        // Process registration (e.g., save to database)
-        Toast.makeText(this, "Child registered successfully", Toast.LENGTH_SHORT).show();
+        editDor = findViewById(R.id.edit_dor);
+        editDor.setOnClickListener(v -> new DatePickerDialog(AddChildActivity.this, (view, year, month, dayOfMonth) -> {
 
-        // Optionally, clear fields after successful registration
-        clearFields();
-    }
+            myCalender.set(Calendar.YEAR, year);
+            myCalender.set(Calendar.MONTH, month);
+            myCalender.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
-    private void cancelRegistration() {
-        // Optionally, add confirmation dialog here
-        Toast.makeText(this, "Registration cancelled", Toast.LENGTH_SHORT).show();
-        finish();  // Close the activity
+            String myFormat = "dd-MM-yyyy" ;
+            SimpleDateFormat dateFormat = new SimpleDateFormat(myFormat , Locale.US );
+            editDor.setText(dateFormat.format(myCalender.getTime()));
+        }, myCalender.get(Calendar.YEAR), myCalender.get(Calendar.MONTH), myCalender.get(Calendar.DAY_OF_MONTH)).show());
+
+
+        btncancel.setOnClickListener(v -> {
+            clearFields();
+            navigateToDashboard();
+        });
+
+        btnregister.setOnClickListener(v -> navigateToDashboard());
     }
 
     private void clearFields() {
@@ -77,6 +73,10 @@ public class AddChildActivity extends AppCompatActivity {
         editAddress.setText("");
         radioGroupGender.clearCheck();
         spinnerRegHealthDiv.setSelection(0);
-        spinnerNoOfChildren.setSelection(0);
+    }
+
+    private void navigateToDashboard() {
+        Intent intent = new Intent(AddChildActivity.this, Dashboard.class);
+        startActivity(intent);
     }
 }

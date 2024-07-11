@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the "Get Started" button
+
         Button getStartedButton = findViewById(R.id.get_started);
 
-        // Set an OnClickListener to the button
+
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Intent created to start LoginActivity");
                 startActivity(intent);
             }
-        });
+        }
+
+        );
     }
 }

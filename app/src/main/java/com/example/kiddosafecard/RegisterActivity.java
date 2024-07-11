@@ -22,10 +22,10 @@ public class RegisterActivity extends AppCompatActivity {
         editEmail = findViewById(R.id.edit_email);
         editMobileNo = findViewById(R.id.edit_mobile_no);
 
-        // Set up the register button click listener
+
         Button registerButton = findViewById(R.id.btn_register);
         registerButton.setOnClickListener(v -> {
-            // Create an intent to start the LoginActivity
+
             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(intent);
         });
@@ -35,10 +35,6 @@ public class RegisterActivity extends AppCompatActivity {
         cancelButton.setOnClickListener(v -> {
             clearFields();
         });
-
-        // Set up the clear button click listener to clear the input fields
-        Button clearButton = findViewById(R.id.btn_cancel);
-        clearButton.setOnClickListener(v -> clearFields());
 
         // Set up the sign in text view click listener to navigate to Login screen
         TextView signInTextView = findViewById(R.id.txt_sign_in);

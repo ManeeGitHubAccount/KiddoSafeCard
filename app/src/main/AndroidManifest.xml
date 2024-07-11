@@ -22,9 +22,12 @@
         </activity>
         <activity android:name=".LoginActivity" android:exported="true" />
         <activity android:name=".Dashboard" android:exported="true" />
-        <activity android:name=".RegisterActivity" android:exported="true"
+        <activity android:name=".RegisterActivity" android:exported="true"/>
+        <activity android:name=".AddChildActivity" android:exported="true" tools:ignore="Instantiatable" />
+        <activity android:name=".ImmunizationActivity" android:exported="true"/>
+        <activity android:name=".UpcomingDatesActivity" android:exported="true"/>
+        <activity android:name=".EducationActivity" android:exported="true"
             tools:ignore="Instantiatable" />
-
 
     </application>
 </manifest>

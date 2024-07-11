@@ -116,8 +116,12 @@
             android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="380dp"
+            android:width="300dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
+            android:clickable="false"
+            android:focusable="false"
             android:hint="Pick the Date of Birth"
             android:inputType="date"
             android:textAlignment="center"
@@ -149,6 +153,8 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
+            android:clickable="false"
+            android:focusable="false"
             android:hint="Pick the Date of Registration"
             android:inputType="date"
             android:textAlignment="center"
@@ -274,8 +280,8 @@
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="196dp"
-            android:layout_height="46dp"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/background_btn_1"
             android:text="REGISTER"
@@ -289,8 +295,8 @@
 
         <Button
             android:id="@+id/btn_cancel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/background_btn_1"
             android:text="CANCEL"
@@ -301,6 +307,30 @@
             app:layout_constraintStart_toEndOf="@+id/btn_register"
             app:layout_constraintTop_toBottomOf="@+id/spinner_no_of_children"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <ImageView
+            android:id="@+id/img_cal"
+            android:layout_width="48dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="298dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_dob"
+            app:layout_constraintStart_toStartOf="@+id/edit_dob"
+            app:layout_constraintTop_toTopOf="@+id/edit_dob"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/calendar"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/img_cal2"
+            android:layout_width="48dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="298dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_dor"
+            app:layout_constraintStart_toStartOf="@+id/edit_dor"
+            app:layout_constraintTop_toTopOf="@+id/edit_dor"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/calendar"
+            tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
