@@ -59,7 +59,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_baby_diappering"
+        app:layout_constraintBottom_toTopOf="@+id/btn_baby_diapering"
         app:layout_constraintEnd_toStartOf="@+id/textView_firstAid"
         app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,30 +119,30 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView_baby_diappering"
+        app:layout_constraintStart_toEndOf="@+id/textView_baby_diapering"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <ImageButton
-        android:id="@+id/btn_baby_diappering"
+        android:id="@+id/btn_baby_diapering"
         android:layout_width="153dp"
         android:layout_height="148dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="20dp"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/textView_baby_diappering"
+        app:layout_constraintBottom_toTopOf="@+id/textView_baby_diapering"
         app:layout_constraintEnd_toStartOf="@+id/btn_baby_bond"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/learn_diappering_teq"
-        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck" />
-
+        app:srcCompat="@drawable/learn_diapering_teq"
+        tools:ignore="ContentDescription,HardcodedText" />
     <TextView
-        android:id="@+id/textView_baby_diappering"
+        android:id="@+id/textView_baby_diapering"
         android:layout_width="168dp"
         android:layout_height="84dp"
         android:layout_marginBottom="76dp"
         android:gravity="center"
-        android:text="Learn Diappering Techniques"
+        android:text="Learn Diapering Techniques"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
