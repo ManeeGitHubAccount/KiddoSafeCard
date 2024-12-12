@@ -3,11 +3,14 @@ package com.example.kiddosafecard;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EducationActivity extends AppCompatActivity {
+
+    ImageButton btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +70,17 @@ public class EducationActivity extends AppCompatActivity {
         bondWithMotherTextView.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.co.uk/search?q=Bond+with+your+baby+for+mothers&sca_esv=ad39667dfdf7fe91&ei=lf2QZs6cCcHiseMPteyZyAo&ved=0ahUKEwiOu_SKnqGHAxVBcWwGHTV2BqkQ4dUDCA4&uact=5&oq=Bond+with+your+baby+for+mothers&gs_lp=Egxnd3Mtd2l6LXNlcnAiH0JvbmQgd2l0aCB5b3VyIGJhYnkgZm9yIG1vdGhlcnMyCBAAGIAEGKIEMggQABiABBiiBEiDFlCaE1iaE3ABeAGQAQCYAcACoAHAAqoBAzMtMbgBA8gBAPgBAvgBAZgCAqAC1gLCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcFMS4zLTGgB98B&sclient=gws-wiz-serp"));
             startActivity(intent);
+        });
+
+        btn = findViewById(R.id.btn_back);
+
+        btn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(EducationActivity.this,Dashboard.class));
+            }
         });
 
     }

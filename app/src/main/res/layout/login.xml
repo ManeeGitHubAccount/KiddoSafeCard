@@ -41,7 +41,7 @@
         android:id="@+id/edit_password"
         android:layout_width="356dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="Password"
@@ -79,10 +79,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.349"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714"
+        app:layout_constraintVertical_bias="0.713"
         tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
     <TextView
@@ -95,9 +95,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71000004"
+        app:layout_constraintVertical_bias="0.708"
         tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

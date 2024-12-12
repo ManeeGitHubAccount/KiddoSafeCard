@@ -1,77 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="295dp"
         android:layout_height="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_prof_details"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo"
         tools:ignore="ContentDescription" />
 
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_prof_details"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="72dp"
         android:text="Profile Details"
+        android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_username"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
         android:text="Username :"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_email"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
         android:text="Email address :"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_mobile_no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="ContentDescription,HardcodedText,VisualLintButtonSize" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_mobile_no"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="236dp"
         android:text="Mobile number :"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -80,9 +91,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.753"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        tools:ignore="DuplicateIds,HardcodedText,TextSizeCheck" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

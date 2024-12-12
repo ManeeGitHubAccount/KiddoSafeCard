@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "641306842763",
+    "project_id": "kiddosafecard",
+    "storage_bucket": "kiddosafecard.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641306842763:android:2db58742e68bd5e771a68e",
+        "android_client_info": {
+          "package_name": "com.example.kiddosafecard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhOWb4CVwgxs7fZC7wAwhq08zDExRL2xM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.kiddosafecard.fragments.ChildFragment;
+
 public class Dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class Dashboard extends AppCompatActivity {
         TextView parentalEduResTextView = findViewById(R.id.txt_parental_edu_res); // New
 
         registerChildButton.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, AddChildActivity.class);
+            Intent intent = new Intent(Dashboard.this, ChildActivity.class);
             startActivity(intent);
         });
 
@@ -47,7 +49,7 @@ public class Dashboard extends AppCompatActivity {
         });
 
         registerChildTextView.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, AddChildActivity.class);
+            Intent intent = new Intent(Dashboard.this, ChildFragment.class);
             startActivity(intent);
         });
 

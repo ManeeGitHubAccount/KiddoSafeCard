@@ -7,14 +7,13 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class UpcomingDatesActivity extends AppCompatActivity {
+public class ProfileDetailsActivity extends AppCompatActivity {
 
     ImageButton btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.upcomingdates);
-
+        setContentView(R.layout.profiledetails);
 
         btn = findViewById(R.id.btn_back);
 
@@ -23,7 +22,7 @@ public class UpcomingDatesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(UpcomingDatesActivity.this,Dashboard.class));
+                startActivity(new Intent(ProfileDetailsActivity.this,Dashboard.class));
             }
         });
     }

@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity">
+        tools:context=".fragments.add_child">
 
         <ImageView
             android:id="@+id/logo"
@@ -19,7 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baby_nav"
+            app:srcCompat="@drawable/logo"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -93,7 +93,7 @@
                 android:textSize="16sp"
                 tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
 
-        </RadioGroup>
+             </RadioGroup>
 
         <TextView
             android:id="@+id/txt_dob"
@@ -248,6 +248,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/edittext_background"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_reg_health_div"
             tools:ignore="HardcodedText" />
@@ -307,6 +308,21 @@
             app:layout_constraintStart_toEndOf="@+id/btn_register"
             app:layout_constraintTop_toBottomOf="@+id/spinner_no_of_children"
             tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,VisualLintButtonSize,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
 
         <ImageView
             android:id="@+id/img_cal"

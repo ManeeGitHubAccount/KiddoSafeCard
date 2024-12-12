@@ -16,13 +16,11 @@
             android:layout_height="141dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.086"
+            app:layout_constraintVertical_bias="0.058"
             app:srcCompat="@drawable/logo"
             tools:ignore="ContentDescription" />
-
 
         <TextView
             android:id="@+id/childname"
@@ -34,10 +32,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.32"
+            app:layout_constraintVertical_bias="0.266"
             tools:ignore="DuplicateIds,HardcodedText" />
 
         <Spinner
@@ -45,16 +43,14 @@
             android:layout_width="357dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/edittext_background"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.363"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/childname"
-            tools:ignore="HardcodedText"
-            tools:layout_editor_absoluteY="293dp" />
-
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/text_vaccine_name"
@@ -69,7 +65,7 @@
             app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.533"
+            app:layout_constraintVertical_bias="0.44"
             tools:ignore="DuplicateIds,HardcodedText" />
 
         <Spinner
@@ -77,14 +73,14 @@
             android:layout_width="357dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/edittext_background"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_vaccine_name"
-            tools:ignore="HardcodedText"
-            tools:layout_editor_absoluteY="413dp" />
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/textremarks"
@@ -96,30 +92,28 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.71"
+            app:layout_constraintVertical_bias="0.615"
             tools:ignore="DuplicateIds,HardcodedText" />
 
         <EditText
             android:id="@+id/edit_remarks"
-            android:layout_width="357dp"
-            android:layout_height="70dp"
+            android:layout_width="353dp"
+            android:layout_height="119dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/edittext_background"
             android:ems="10"
+            android:hint="Enter remarks here"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:hint="Enter remarks here"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textremarks"
             tools:ignore="Autofill,HardcodedText" />
-
-
 
         <Button
             android:id="@+id/btn_save"
@@ -167,9 +161,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="HardcodedText" />
 
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,VisualLintButtonSize" />
 
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>

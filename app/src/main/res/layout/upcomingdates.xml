@@ -8,175 +8,174 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="295dp"
-        android:layout_height="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="266dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
         app:srcCompat="@drawable/logo"
         tools:ignore="ContentDescription" />
 
-
     <TextView
         android:id="@+id/txt_title_upcoming_date"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:text="Upcoming Dates"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         tools:ignore="DuplicateIds,HardcodedText" />
-
 
     <View
         android:id="@+id/rec1"
         android:layout_width="387dp"
         android:layout_height="224dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="32dp"
         android:background="#FB5E1B"
-        app:layout_constraintBottom_toTopOf="@+id/rec2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_upcoming_date" />
 
     <TextView
         android:id="@+id/txt_vac_name1"
         android:layout_width="155dp"
         android:layout_height="22dp"
+        android:layout_marginTop="20dp"
         android:text="Vaccine name :"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rec1"
-        app:layout_constraintVertical_bias="0.038"
+        app:layout_constraintEnd_toEndOf="@id/rec1"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@id/rec1"
+        app:layout_constraintTop_toTopOf="@id/rec1"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
         android:id="@+id/txt_date1"
         android:layout_width="155dp"
         android:layout_height="22dp"
+        android:layout_marginTop="32dp"
         android:text="Date :"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_vac_name1"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintEnd_toEndOf="@id/rec1"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@id/rec1"
+        app:layout_constraintTop_toBottomOf="@id/txt_vac_name1"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
         android:id="@+id/txt_time1"
         android:layout_width="155dp"
         android:layout_height="22dp"
+        android:layout_marginTop="28dp"
         android:text="Time :"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_date1"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintEnd_toEndOf="@id/rec1"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@id/rec1"
+        app:layout_constraintTop_toBottomOf="@id/txt_date1"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
         android:id="@+id/txt_remark1"
         android:layout_width="155dp"
         android:layout_height="22dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="Remarks :"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_time1"
+        app:layout_constraintEnd_toEndOf="@id/rec1"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@id/rec1"
+        app:layout_constraintTop_toBottomOf="@id/txt_time1"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <View
         android:id="@+id/rec2"
         android:layout_width="387dp"
         android:layout_height="224dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="28dp"
         android:background="#D9D9D9"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_remark2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:text="Remarks :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_time2"
-        app:layout_constraintVertical_bias="0.141"
-        tools:ignore="DuplicateIds,HardcodedText,NotSibling" />
+        app:layout_constraintTop_toBottomOf="@id/rec1" />
 
     <TextView
         android:id="@+id/txt_vac_name2"
         android:layout_width="155dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginTop="24dp"
         android:text="Vaccine name :"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rec2"
-        app:layout_constraintVertical_bias="0.523"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <TextView
-        android:id="@+id/txt_time2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="192dp"
-        android:text="Time :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rec2"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintTop_toTopOf="@id/rec2"
         tools:ignore="DuplicateIds,HardcodedText" />
 
     <TextView
         android:id="@+id/txt_date2"
         android:layout_width="155dp"
         android:layout_height="22dp"
+        android:layout_marginTop="24dp"
         android:text="Date :"
         android:textColor="#000000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rec2"
-        app:layout_constraintVertical_bias="0.236"
+        app:layout_constraintEnd_toEndOf="@id/rec2"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintTop_toBottomOf="@id/txt_vac_name2"
         tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_time2"
+        android:layout_width="155dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Time :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/rec2"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintTop_toBottomOf="@id/txt_date2"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_remark2"
+        android:layout_width="155dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="Remarks :"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/rec2"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@id/rec2"
+        app:layout_constraintTop_toBottomOf="@id/txt_time2"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/back"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

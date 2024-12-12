@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_editor_absoluteX="1dp"
     app:layout_editor_absoluteY="1dp"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="com.example.kiddosafecard.ChildFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -88,7 +89,7 @@
             android:layout_marginTop="28dp"
             android:background="@drawable/edittext_background"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.818"
+            app:layout_constraintHorizontal_bias="0.724"
             app:layout_constraintStart_toEndOf="@+id/txt_child_det_name"
             app:layout_constraintTop_toBottomOf="@+id/spinner_select_child_name"
             tools:ignore="HardcodedText,TextSizeCheck" />
@@ -97,12 +98,12 @@
             android:id="@+id/txt_gender_det"
             android:layout_width="126dp"
             android:layout_height="27dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:text="Gender :"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_child_det_name"
             tools:ignore="HardcodedText,TextSizeCheck" />
@@ -311,6 +312,20 @@
             app:layout_constraintStart_toEndOf="@+id/btn_add"
             app:layout_constraintTop_toBottomOf="@+id/txt_no_of_children_value"
             tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,VisualLintButtonSize" />
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
