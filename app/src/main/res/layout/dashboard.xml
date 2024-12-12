@@ -47,6 +47,21 @@
         tools:ignore="HardcodedText" />
 
     <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/logout"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_img_growth_chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,VisualLintButtonSize,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageButton
         android:id="@+id/btn_img_growth_chart"
         android:layout_width="153dp"
         android:layout_height="148dp"
@@ -129,8 +144,6 @@
         app:layout_constraintTop_toBottomOf="@id/btn_img_upcoming_dates"
         tools:ignore="HardcodedText,VisualLintOverlap" />
 
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container_reg_child"
         android:layout_width="373dp"
@@ -153,7 +166,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/reg_child"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
 
         <TextView
             android:id="@+id/txt_reg_child"
@@ -170,7 +183,9 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
