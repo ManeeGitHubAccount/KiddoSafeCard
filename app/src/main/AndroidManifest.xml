@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -29,7 +30,7 @@
             android:name=".Dashboard"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".RegisterScreenActivity"
             android:exported="true" />
         <activity
             android:name=".ChildActivity"
@@ -56,6 +57,7 @@
         <activity
             android:name=".LogoutActivity"
             android:exported="true" />
+
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
     app:layout_editor_absoluteX="1dp"
     app:layout_editor_absoluteY="1dp"
     android:fillViewport="true"
-    tools:context="com.example.kiddosafecard.ChildFragment">
+    tools:context=".ChildActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

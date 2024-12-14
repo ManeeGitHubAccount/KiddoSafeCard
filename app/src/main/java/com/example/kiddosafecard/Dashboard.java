@@ -7,10 +7,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.kiddosafecard.fragments.ChildFragment;
-
 public class Dashboard extends AppCompatActivity {
-
     ImageButton btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,11 +59,6 @@ public class Dashboard extends AppCompatActivity {
             startActivity(intent);
         });
 
-        registerChildTextView.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, ChildFragment.class);
-            startActivity(intent);
-        });
-
         upcomingDatesTextView.setOnClickListener(v -> {
             Intent intent = new Intent(Dashboard.this, UpcomingDatesActivity.class);
             startActivity(intent);
@@ -76,5 +68,6 @@ public class Dashboard extends AppCompatActivity {
             Intent intent = new Intent(Dashboard.this, EducationActivity.class);
             startActivity(intent);
         });
+
     }
 }
