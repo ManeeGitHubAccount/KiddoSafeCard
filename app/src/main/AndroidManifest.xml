@@ -57,7 +57,5 @@
         <activity
             android:name=".LogoutActivity"
             android:exported="true" />
-
     </application>
-
 </manifest>

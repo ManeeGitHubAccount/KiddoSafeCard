@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
-
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

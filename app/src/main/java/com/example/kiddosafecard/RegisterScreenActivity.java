@@ -123,18 +123,5 @@ public class RegisterScreenActivity extends AppCompatActivity {
             }
         });
 
-//        fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(task ->
-//        {
-//            progressBar.setVisibility(View.GONE);
-//            if (task.isSuccessful())
-//            {
-//                Toast.makeText(RegisterScreenActivity.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-//                finish();
-//            } else
-//            {
-//                Toast.makeText(RegisterScreenActivity.this, "Error: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
 }
