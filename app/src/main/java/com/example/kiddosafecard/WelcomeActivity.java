@@ -9,15 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
 
-
         Button getStartedButton = findViewById(R.id.get_started);
-
 
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override

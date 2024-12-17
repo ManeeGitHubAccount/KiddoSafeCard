@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.firebase.firestore.*;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<User> userArrayList;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         // Initialize progress dialog
         progressDialog = new ProgressDialog(this);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // Setup Firebase Firestore
         db = FirebaseFirestore.getInstance();
         userArrayList = new ArrayList<>();
-        myAdapter = new MyAdapter(MainActivity.this, userArrayList);
+        myAdapter = new MyAdapter(MainActivity2.this, userArrayList);
         recyclerView.setAdapter(myAdapter);
 
         fetchDataFromFirestore();

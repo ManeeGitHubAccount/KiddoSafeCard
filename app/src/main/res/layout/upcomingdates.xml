@@ -1,182 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="266dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="295dp"
+            android:layout_height="141dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.058"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/txt_title_upcoming_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Upcoming Dates"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        <TextView
+            android:id="@+id/txt_vaccineName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:text="Your vaccination name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="DuplicateIds,HardcodedText" />
 
-    <View
-        android:id="@+id/rec1"
-        android:layout_width="387dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="32dp"
-        android:background="#FB5E1B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_title_upcoming_date" />
+        <EditText
+            android:id="@+id/edit_vaccine"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Enter vaccination name"
+            android:background="@drawable/edittext_background"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_vaccineName"
+            tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/txt_vac_name1"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="20dp"
-        android:text="Vaccine name :"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec1"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="@id/rec1"
-        app:layout_constraintTop_toTopOf="@id/rec1"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_vaccine"
+            tools:ignore="DuplicateIds,HardcodedText" />
 
-    <TextView
-        android:id="@+id/txt_date1"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="32dp"
-        android:text="Date :"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec1"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="@id/rec1"
-        app:layout_constraintTop_toBottomOf="@id/txt_vac_name1"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="Time"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_vaccine" />
 
-    <TextView
-        android:id="@+id/txt_time1"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="28dp"
-        android:text="Time :"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec1"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="@id/rec1"
-        app:layout_constraintTop_toBottomOf="@id/txt_date1"
-        tools:ignore="DuplicateIds,HardcodedText" />
+        <TextView
+            android:id="@+id/txt_remarks"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Remarks"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_time"
+            tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/txt_remark1"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="28dp"
-        android:text="Remarks :"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec1"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="@id/rec1"
-        app:layout_constraintTop_toBottomOf="@id/txt_time1"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <View
-        android:id="@+id/rec2"
-        android:layout_width="387dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="28dp"
-        android:background="#D9D9D9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec1" />
-
-    <TextView
-        android:id="@+id/txt_vac_name2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="24dp"
-        android:text="Vaccine name :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec2"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@id/rec2"
-        app:layout_constraintTop_toTopOf="@id/rec2"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <TextView
-        android:id="@+id/txt_date2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="24dp"
-        android:text="Date :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec2"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@id/rec2"
-        app:layout_constraintTop_toBottomOf="@id/txt_vac_name2"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <TextView
-        android:id="@+id/txt_time2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="32dp"
-        android:text="Time :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec2"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@id/rec2"
-        app:layout_constraintTop_toBottomOf="@id/txt_date2"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <TextView
-        android:id="@+id/txt_remark2"
-        android:layout_width="155dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="32dp"
-        android:text="Remarks :"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/rec2"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@id/rec2"
-        app:layout_constraintTop_toBottomOf="@id/txt_time2"
-        tools:ignore="DuplicateIds,HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/btn_back"
-        android:layout_width="44dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:background="@drawable/back"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <EditText
+            android:id="@+id/select_vaccine"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Enter Date"
+            android:background="@drawable/edittext_background"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_date"
+            tools:ignore="HardcodedText" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/edit_time"
+            android:layout_width="357dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Time"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time" />
+
+        <EditText
+            android:id="@+id/edit_remarks"
+            android:layout_width="353dp"
+            android:layout_height="119dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter remarks here"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_remarks"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/background_btn_1"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_clear"
+            app:layout_constraintHorizontal_bias="0.617"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="76dp"
+            android:background="@drawable/background_btn_1"
+            android:text="CLEAR"
+            android:textColor="@color/white"
+
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_remarks"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,VisualLintButtonSize,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

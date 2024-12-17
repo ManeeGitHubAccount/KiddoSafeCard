@@ -1,191 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".Dashboard">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="295dp"
-        android:layout_height="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ContentDescription" />
-
-    <ImageButton
-        android:id="@+id/btn_img_immunization"
-        android:layout_width="153dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="124dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/btn_img_growth_chart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:srcCompat="@drawable/immunization"
-        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/txt_growth_chart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Growth Chart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/btn_img_growth_chart"
-        app:layout_constraintHorizontal_bias="0.303"
-        app:layout_constraintStart_toStartOf="@id/btn_img_growth_chart"
-        app:layout_constraintTop_toBottomOf="@id/btn_img_growth_chart"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/btn_logout"
-        android:layout_width="47dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/logout"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_img_growth_chart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
-        tools:ignore="ContentDescription,HardcodedText,MissingConstraints,VisualLintButtonSize,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-
-    <ImageButton
-        android:id="@+id/btn_img_growth_chart"
-        android:layout_width="153dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="24dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_img_immunization"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:srcCompat="@drawable/growth_chart"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/txt_immunization"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Immunization"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/btn_img_immunization"
-        app:layout_constraintHorizontal_bias="0.607"
-        app:layout_constraintStart_toStartOf="@id/btn_img_immunization"
-        app:layout_constraintTop_toBottomOf="@id/btn_img_immunization"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/btn_img_upcoming_dates"
-        android:layout_width="153dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/btn_img_parental_edu_res"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_immunization"
-        app:srcCompat="@drawable/upcoming_dates"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/txt_parental_edu_res"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Parental Edu/Res"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/btn_img_parental_edu_res"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/btn_img_parental_edu_res"
-        app:layout_constraintTop_toBottomOf="@id/btn_img_parental_edu_res"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
-
-    <ImageButton
-        android:id="@+id/btn_img_parental_edu_res"
-        android:layout_width="153dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_img_upcoming_dates"
-        app:layout_constraintTop_toBottomOf="@+id/txt_growth_chart"
-        app:srcCompat="@drawable/parental_edu_res"
-        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/txt_upcoming_dates"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Upcoming Dates"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/btn_img_upcoming_dates"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/btn_img_upcoming_dates"
-        app:layout_constraintTop_toBottomOf="@id/btn_img_upcoming_dates"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container_reg_child"
-        android:layout_width="373dp"
-        android:layout_height="68dp"
-        android:background="@drawable/background_btn_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/img_btn_reg_child"
-            android:layout_width="77dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="4dp"
-            android:scaleType="fitCenter"
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="295dp"
+            android:layout_height="141dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/reg_child"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+            app:layout_constraintVertical_bias="0.067"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/txt_reg_child"
-            android:layout_width="247dp"
-            android:layout_height="34dp"
-            android:layout_marginBottom="20dp"
-            android:text="Register Your Child"
+        <ImageButton
+            android:id="@+id/btn_img_immunization"
+            android:layout_width="153dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_reg_child"
+            app:srcCompat="@drawable/immunization"
+            tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_img_immunizationHistory"
+            android:layout_width="153dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toEndOf="@+id/btn_img_immunization"
+            app:layout_constraintTop_toBottomOf="@+id/container_reg_child"
+            app:srcCompat="@drawable/immunization"
+            tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+
+        <ImageButton
+            android:id="@+id/btn_img_upcomingHistory"
+            android:layout_width="153dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="32dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_upcoming_dates"
+            app:layout_constraintVertical_bias="0.19"
+            app:srcCompat="@drawable/upcoming_dates"
+            tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/logout"
             android:textColor="@color/white"
             android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,HardcodedText,MissingConstraints,VisualLintButtonSize,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_immunization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Immunization"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/btn_img_immunization"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/btn_img_immunization"
+            app:layout_constraintTop_toBottomOf="@id/btn_img_immunization"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_immunizationHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Immunization History"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toEndOf="@+id/txt_immunization"
+            app:layout_constraintTop_toBottomOf="@+id/btn_img_immunizationHistory" />
+
+        <ImageButton
+            android:id="@+id/btn_img_upcoming_dates"
+            android:layout_width="153dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/btn_img_parental_edu_res"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_immunization"
+            app:srcCompat="@drawable/upcoming_dates"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txt_parental_edu_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Parental Edu/Res"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/btn_img_parental_edu_res"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/btn_img_parental_edu_res"
+            app:layout_constraintTop_toBottomOf="@id/btn_img_parental_edu_res"
+            tools:ignore="HardcodedText,VisualLintOverlap,VisualLintBounds" />
+
+        <ImageButton
+            android:id="@+id/btn_img_parental_edu_res"
+            android:layout_width="153dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_img_upcoming_dates"
+            app:layout_constraintTop_toBottomOf="@+id/txt_immunization"
+            app:srcCompat="@drawable/parental_edu_res"
+            tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txt_upcoming_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Upcoming Dates"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/btn_img_upcoming_dates"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/btn_img_upcoming_dates"
+            app:layout_constraintTop_toBottomOf="@id/btn_img_upcoming_dates"
+            tools:ignore="HardcodedText,VisualLintOverlap,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/txt_upcoming_datesHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:text="Upcoming Dates History"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/img_btn_reg_child"
-            app:layout_constraintHorizontal_bias="0.787"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="HardcodedText,TextSizeCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_img_upcomingHistory" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_reg_child"
+            android:layout_width="373dp"
+            android:layout_height="68dp"
+            android:background="@drawable/background_btn_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.247">
+
+            <ImageButton
+                android:id="@+id/btn_img_reg_child"
+                android:layout_width="77dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/reg_child"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/txt_reg_child"
+                android:layout_width="240dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:text="Register Your Child"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_img_reg_child"
+                app:layout_constraintHorizontal_bias="0.787"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
